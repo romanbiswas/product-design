@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Product Grid</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&amp;family=Cormorant+Garamond:ital,wght@500;600&amp;family=DM+Sans:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#F2F3F0;font-family:'DM Sans',system-ui,sans-serif;color:#16181A}
+a{color:#16181A}a:hover{color:#363851}
+</style>
+</helmet>
+<div style="display: flex; flex-direction: column; background: #F2F3F0; font-family: 'DM Sans', system-ui, sans-serif; color: #16181A">
+
+<header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 48px; border-bottom: 1px solid #D5D8D2">
+<a href="#top" aria-label="Lustre Jewels home" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: #363851">
+<svg width="64" height="44" viewBox="0 0 64 44" aria-hidden="true" style="display: block; flex: none">
+<circle cx="6" cy="5" r="2.6" fill="#363851"></circle>
+<circle cx="13" cy="14" r="3" fill="#363851"></circle>
+<circle cx="22" cy="20" r="3.4" fill="#363851"></circle>
+<circle cx="42" cy="20" r="3.4" fill="#363851"></circle>
+<circle cx="51" cy="14" r="3" fill="#363851"></circle>
+<circle cx="58" cy="5" r="2.6" fill="#363851"></circle>
+<path d="M32 20 C32 20 25 30 25 35 a7 7 0 0 0 14 0 C39 30 32 20 32 20 Z" fill="#363851"></path>
+<ellipse cx="29.2" cy="35" rx="1.6" ry="2.8" fill="#F2F3F0" opacity="0.8" transform="rotate(15 29.2 35)"></ellipse>
+</svg>
+<span style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500; font-size: 34px; line-height: 1">Lustre</span>
+<span style="font-size: 11px; letter-spacing: 0.4em; font-weight: 500; line-height: 1">JEWELS</span>
+</span>
+</a>
+<button type="button" style="min-height: 44px; padding: 0 20px; border: 1px solid #16181A; background: transparent; color: #16181A; font: 500 15px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Cart (0)</button>
+</header>
+
+<main id="top" style="width: 100%; max-width: 1280px; box-sizing: border-box; margin: 0 auto; padding: 64px 48px 58px; display: flex; flex-direction: column; gap: 48px">
+
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 38px; line-height: 1; letter-spacing: -0.03em">All Products</h1>
+<p style="margin: 0; font-size: 16px; color: #4A4F4B">9 products</p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 40px 32px">
+
+<article style="display: flex; flex-direction: column; gap: 16px">
+<img src="./assets/d249011f452dd85861d0e3c43225d797.jpg" alt="Necklace with purple and green teardrop cabochon stones" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; background: #E1E4DF">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.01em">Teardrop Cabochon Necklace</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #4A4F4B">Glossy purple, green and yellow stones set in textured antique-gold frames.</p>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span style="font-weight: 500; font-size: 18px">$64</span>
+<button type="button" style="min-height: 35px; padding: 0 16px; border: 0; background: #363851; color: #FFFFFF; font: 500 12px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Add to cart</button>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 16px">
+<img src="./assets/4eebed3df8b0339b0385ca48753e7907.jpg" alt="Blue beaded charm necklace on silver chain" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; background: #E1E4DF">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.01em">Blue Bead Charm Necklace</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #4A4F4B">Shades of blue beads and silver charms gathered into a playful cluster.</p>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span style="font-weight: 500; font-size: 18px">$38</span>
+<button type="button" style="min-height: 35px; padding: 0 16px; border: 0; background: #363851; color: #FFFFFF; font: 500 12px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Add to cart</button>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 16px">
+<img src="./assets/93d6bb47be992555409a1c4a192e5ba4.jpg" alt="Red and pink beaded charm necklace on gold chain" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; background: #E1E4DF">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.01em">Ruby Red Charm Necklace</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #4A4F4B">Red and pink beads with a gold feather charm on a fine gold-tone chain.</p>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span style="font-weight: 500; font-size: 18px">$42</span>
+<button type="button" style="min-height: 35px; padding: 0 16px; border: 0; background: #363851; color: #FFFFFF; font: 500 12px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Add to cart</button>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 16px">
+<img src="./assets/6f280586efa6ae44af1a2bcf506a3420.jpg" alt="Long double-strand necklace of pearls and coloured stones" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; background: #E1E4DF">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.01em">Gemstone Station Necklace</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #4A4F4B">A long double strand of gold-edged stones, pearls and pops of pink.</p>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span style="font-weight: 500; font-size: 18px">$72</span>
+<button type="button" style="min-height: 35px; padding: 0 16px; border: 0; background: #363851; color: #FFFFFF; font: 500 12px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Add to cart</button>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 16px">
+<img src="./assets/879a8ea1a03d9d1538e747fd6902c66f.jpg" alt="Layered pearl and agate statement necklace" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; background: #E1E4DF">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.01em">Blush Pearl Cascade Necklace</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #4A4F4B">Layered strands of peach, white and pink pearls with faceted teardrop stones.</p>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span style="font-weight: 500; font-size: 18px">$96</span>
+<button type="button" style="min-height: 35px; padding: 0 16px; border: 0; background: #363851; color: #FFFFFF; font: 500 12px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Add to cart</button>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 16px">
+<img src="./assets/a103688f07e61a01ac32fdecabe6cbb2.jpg" alt="Agate and grey pearl stretch bracelet" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; background: #E1E4DF">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.01em">Amber Agate Bracelet</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #4A4F4B">Faceted amber agate beads paired with soft grey pearls on a stretch band.</p>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span style="font-weight: 500; font-size: 18px">$34</span>
+<button type="button" style="min-height: 35px; padding: 0 16px; border: 0; background: #363851; color: #FFFFFF; font: 500 12px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Add to cart</button>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 16px">
+<img src="./assets/2451e79683d02c6eec8000147129f81f.jpg" alt="Purple pearl and black crystal bracelet" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; background: #E1E4DF">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.01em">Midnight Pearl Bracelet</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #4A4F4B">Purple pearls and black faceted crystals, spaced with silver beads.</p>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span style="font-weight: 500; font-size: 18px">$48</span>
+<button type="button" style="min-height: 35px; padding: 0 16px; border: 0; background: #363851; color: #FFFFFF; font: 500 12px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Add to cart</button>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 16px">
+<img src="./assets/fefd6088e09083df08be5c7c46bf2842.jpg" alt="Pearl bracelet with silver clasp" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; background: #E1E4DF">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.01em">White Pearl Bracelet</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #4A4F4B">Blush-white pearls finished with a polished silver clasp.</p>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span style="font-weight: 500; font-size: 18px">$58</span>
+<button type="button" style="min-height: 35px; padding: 0 16px; border: 0; background: #363851; color: #FFFFFF; font: 500 12px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Add to cart</button>
+</div>
+</article>
+
+<article style="display: flex; flex-direction: column; gap: 16px">
+<img src="./assets/48b4152aa4f8301fa72b4b0351c210f1.jpg" alt="Three-strand necklace of lapis lazuli ovals and white pearls" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; background: #E1E4DF">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 500; font-size: 22px; letter-spacing: -0.01em">Triple-Strand Lapis Necklace</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #4A4F4B">Three strands of deep blue lapis ovals and white pearls.</p>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<span style="font-weight: 500; font-size: 18px">$110</span>
+<button type="button" style="min-height: 35px; padding: 0 16px; border: 0; background: #363851; color: #FFFFFF; font: 500 12px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Add to cart</button>
+</div>
+</article>
+
+</div>
+
+<div style="display: flex; justify-content: center">
+<button type="button" style="min-height: 48px; padding: 0 36px; border: 1px solid #363851; background: transparent; color: #363851; font: 500 15px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Load more</button>
+</div>
+</main>
+
+<footer style="margin-top: auto; background: #363851; color: #F2F3F0">
+<div style="width: 100%; max-width: 1280px; box-sizing: border-box; margin: 0 auto; padding: 56px 48px 32px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+<div style="display: flex; align-items: center; gap: 14px">
+<svg width="64" height="44" viewBox="0 0 64 44" aria-hidden="true" style="display: block; flex: none">
+<circle cx="6" cy="5" r="2.6" fill="#F2F3F0"></circle>
+<circle cx="13" cy="14" r="3" fill="#F2F3F0"></circle>
+<circle cx="22" cy="20" r="3.4" fill="#F2F3F0"></circle>
+<circle cx="42" cy="20" r="3.4" fill="#F2F3F0"></circle>
+<circle cx="51" cy="14" r="3" fill="#F2F3F0"></circle>
+<circle cx="58" cy="5" r="2.6" fill="#F2F3F0"></circle>
+<path d="M32 20 C32 20 25 30 25 35 a7 7 0 0 0 14 0 C39 30 32 20 32 20 Z" fill="#F2F3F0"></path>
+<ellipse cx="29.2" cy="35" rx="1.6" ry="2.8" fill="#363851" opacity="0.8" transform="rotate(15 29.2 35)"></ellipse>
+</svg>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500; font-size: 34px; line-height: 1">Lustre</span>
+<span style="font-size: 11px; letter-spacing: 0.4em; font-weight: 500; line-height: 1">JEWELS</span>
+</div>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 32px; font-size: 15px">
+<a href="#top" style="color: #F2F3F0; text-decoration: none">Shop</a>
+<a href="#top" style="color: #F2F3F0; text-decoration: none">About</a>
+<a href="#top" style="color: #F2F3F0; text-decoration: none">Contact</a>
+</nav>
+</div>
+<div style="padding-top: 24px; border-top: 1px solid rgba(242, 243, 240, 0.25); font-size: 14px; color: #D5D8D2">© 2026 Lustre Jewels. All rights reserved.</div>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":2660}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
