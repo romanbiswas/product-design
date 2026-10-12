@@ -35,15 +35,19 @@ a{color:#16181A}a:hover{color:#363851}
 <span style="font-size: 11px; letter-spacing: 0.4em; font-weight: 500; line-height: 1">JEWELS</span>
 </span>
 </a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 40px">
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 32px; font-size: 16px; font-weight: 500">
+<a href="#top" style="color: #16181A; text-decoration: none">Home</a>
+<a href="#top" style="color: #16181A; text-decoration: none">Shop</a>
+<a href="#top" style="color: #16181A; text-decoration: none">About</a>
+<a href="#top" style="color: #16181A; text-decoration: none">Contact</a>
+</nav>
 <button type="button" style="min-height: 44px; padding: 0 20px; border: 1px solid #16181A; background: transparent; color: #16181A; font: 500 15px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Cart (0)</button>
+</div>
 </header>
 
-<main id="top" style="width: 100%; max-width: 1280px; box-sizing: border-box; margin: 0 auto; padding: 64px 48px 58px; display: flex; flex-direction: column; gap: 48px">
+<main id="top" style="width: 100%; max-width: 1280px; box-sizing: border-box; margin: 0 auto; padding: 72px 48px 58px; display: flex; flex-direction: column; gap: 24px">
 
-<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
-<h1 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 38px; line-height: 1; letter-spacing: -0.03em">All Products</h1>
-<p style="margin: 0; font-size: 16px; color: #4A4F4B">9 products</p>
-</div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 40px 32px">
 
@@ -157,6 +161,8 @@ a{color:#16181A}a:hover{color:#363851}
 
 </div>
 
+<p style="margin: 0; font-size: 16px; color: #4A4F4B; text-align: right">9 products</p>
+
 <div style="display: flex; justify-content: center">
 <button type="button" style="min-height: 48px; padding: 0 36px; border: 1px solid #363851; background: transparent; color: #363851; font: 500 15px 'DM Sans', system-ui, sans-serif; border-radius: 999px; cursor: pointer">Load more</button>
 </div>
@@ -192,7 +198,7 @@ a{color:#16181A}a:hover{color:#363851}
 </footer>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":2660}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":2640}}'>
 class Component extends DCLogic {
 renderVals() {
 return {};
